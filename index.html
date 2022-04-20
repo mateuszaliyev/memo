@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memo</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__heading">Memo</h1>
+        <nav class="menu" id="menu">
+          <button class="menu__item">Gra</button>
+          <button class="menu__item">Ranking</button>
+          <button class="menu__item">Ustawienia</button>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section aria-hidden="false" class="container">
+        <div class="memo" id="memo"></div>
+      </section>
+      <section aria-hidden="true" class="container hidden">
+        <header class="scoreboard__header" id="scoreboard-header">
+          <div>Ruchy</div>
+          <div>Rozmiar</div>
+          <div>Wynik</div>
+        </header>
+        <ul class="scoreboard" id="scoreboard"></ul>
+        <div class="scoreboard__buttons">
+          <button id="scoreboard-clear">Wyczyść</button>
+          <button id="scoreboard-export">Eksport</button>
+          <button id="scoreboard-import">Import</button>
+        </div>
+      </section>
+      <section
+        aria-hidden="true"
+        class="container hidden settings"
+        id="settings"
+      ></section>
+    </main>
+    <script src="/app/index.js" type="module"></script>
+  </body>
+</html>
